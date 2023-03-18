@@ -11,7 +11,8 @@ h3,
 h4,
 h5,
 ul,
-p {
+p,
+pre {
   margin: 0;
   padding: 0;
 }
@@ -148,7 +149,7 @@ h1 {
 form > button {
   position: absolute;
   top: 0;
-  right: 101px;
+  right: 0;
 }
 .questions {
   color: #6c8294;
@@ -178,10 +179,12 @@ form > button {
   display: flex;
   justify-content: center;
   gap: 131px;
-  align-items: center;
 }
 .work-company__info {
   width: 445px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .title {
   font-family: "DM Serif Display";
@@ -214,12 +217,15 @@ form > button {
   border: 1px solid #fbfcfe;
   border-radius: 24px;
   padding: 16px 32px 14px 32px;
+  display: block;
+  color: #fbfcfe;
 }
 .company {
   width: 536px;
   flex-direction: column;
   gap: 39px;
   display: flex;
+  justify-content: center;
 }
 .company__variation {
   display: flex;
@@ -233,4 +239,116 @@ form > button {
   align-items: center;
   width: 145px;
   justify-content: center;
+}
+.container {
+  background: #edf3f8;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.code-api {
+  padding: 145px 0 155px 0;
+  height: auto;
+  width: 1115px;
+  display: flex;
+  gap: 125px;
+
+  align-items: center;
+}
+
+.code-api__info-section {
+  width: 445px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+.code__foto-code {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.ux-ui {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 780px;
+  gap: 95px;
+  position: relative;
+  background: #edf3f8;
+}
+.ux-ui__text {
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.two-phones {
+  display: flex;
+  gap: 40px;
+  z-index: 1;
+}
+.half-cicle {
+  background-image: url(./icons/half-cicle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 390px;
+  height: 780px;
+  z-index: 0;
+  right: 0;
+  top: 0;
+}
+.mini_article {
+  padding-top: 6px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  background-color: #edf3f8;
+}
+.mini-section {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  align-items: center;
+}
+.cicle-bacgrounded {
+  background: #36536b;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.bold-text-small{
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.138462px;
+color: #36536B;
+margin-bottom: 16px;
+}
+.mini-text {
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  text-align: center;
+  color: #6c8294;
+}
+.ready{
+  display: flex;
+  gap: 338px;
+  padding: 96px 0;
+  background-color: #edf3f8;
+}
+
+.find{
+  display: flex;
+  align-items: center;
+ 
+}
+.find  .form{
+margin: 0;
 }
