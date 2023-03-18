@@ -352,3 +352,32 @@ margin-bottom: 16px;
 .find  .form{
 margin: 0;
 }
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #1B262F;
+  height: 100px;
+  padding: 0 165px;
+}
+.footer__links{
+  display: flex;
+  gap: 24px;
+}
+.footer__link{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;;
+}
+.fecbook{
+  background-image: url(./icons/feecbook.svg);
+}
+.twiiter{
+  background-image: url(./icons/twiter.svg);
+  background-repeat: no-repeat;
+}
+.linkedin{
+  background-image: url(./icons/linked-in.svg);
+}
