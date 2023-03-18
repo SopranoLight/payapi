@@ -15,7 +15,10 @@ p {
   margin: 0;
   padding: 0;
 }
-ul {
+body {
+  position: relative;
+}
+.navigation__top-list {
   list-style: none;
   display: flex;
   gap: 40px;
@@ -28,7 +31,7 @@ a {
   font-size: 15px;
   line-height: 18px;
 }
-header {
+.header {
   background: #f2f2f2;
   font-family: "Public Sans";
   font-style: normal;
@@ -36,8 +39,21 @@ header {
   font-size: 15px;
   line-height: 18px;
   height: 737px;
+  position: relative;
+  z-index: 0;
 }
-nav {
+.cicle__header {
+  background-image: url(./icons/cikle-header.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 608px;
+  width: 640px;
+
+  z-index: -1;
+}
+.navigation {
   display: flex;
   align-items: center;
   padding: 40px 165px 0 165px;
@@ -46,21 +62,21 @@ nav {
   margin-bottom: 152px;
 }
 
-.navigation-left {
+.navigation__top-content {
   display: flex;
   align-items: center;
   gap: 64px;
 }
-.navigation-left a {
+.navigation__top-logo {
   display: flex;
   gap: 8px;
 }
-
-li a {
+.navigation__top-links {
   mix-blend-mode: normal;
   opacity: 0.7;
 }
-button {
+
+.button {
   letter-spacing: -0.115385px;
   color: #fbfcfe;
   outline: none;
@@ -76,11 +92,12 @@ button {
   padding: 16px 24.5px 14px 26.5px;
   cursor: pointer;
 }
-section {
- display: flex;
- justify-content: center;
+.left_gift {
+  display: flex;
+  justify-content: center;
   position: relative;
   margin: 0 165px;
+  z-index: 1;
 }
 .left-content {
   display: flex;
@@ -98,11 +115,11 @@ h1 {
   margin-bottom: 21px;
   height: 243px;
 }
-form {
-    position: relative;
-    margin-bottom: 16px;
+.form {
+  position: relative;
+  margin-bottom: 16px;
 }
-input {
+.form__email {
   width: 445px;
   height: 48px;
   background: #fbfcfe;
@@ -128,24 +145,92 @@ input {
   mix-blend-mode: normal;
   opacity: 0.5;
 }
-form > button{
-    position: absolute;
-    top: 0;
-    right: 101px;
+form > button {
+  position: absolute;
+  top: 0;
+  right: 101px;
 }
-span {
+.questions {
   color: #6c8294;
   font-weight: 400;
   padding-left: 27px;
 }
-.right-content{
-    width: 567px;
-    display: flex;
-    justify-content: end;
-    position: relative;
-   
+.right-content {
+  width: 567px;
+  display: flex;
+  justify-content: end;
+  position: relative;
 }
-.right-content img{
-    position: absolute;
-    transform: translate(0%, -20%);
+.right-content img {
+  position: absolute;
+  transform: translate(0%, -20%);
+  z-index: 1;
+}
+
+.work-company {
+  width: 100%;
+  background: #1b262f;
+  margin: auto;
+  height: 472px;
+  background-image: url(./icons/cicle-icons-comapany.svg);
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  gap: 131px;
+  align-items: center;
+}
+.work-company__info {
+  width: 445px;
+}
+.title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+.work-company__info-title {
+  color: #fbfcfe;
+  margin-bottom: 24px;
+}
+.work-company__paragraf {
+  color: #fbfcfe;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin-bottom: 32px;
+}
+.paragraf {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+}
+.work-company__button {
+  border: 1px solid #fbfcfe;
+  border-radius: 24px;
+  padding: 16px 32px 14px 32px;
+}
+.company {
+  width: 536px;
+  flex-direction: column;
+  gap: 39px;
+  display: flex;
+}
+.company__variation {
+  display: flex;
+  gap: 62px;
+  align-items: center;
+  justify-content: center;
+}
+.company__lists {
+  height: 33px;
+  display: flex;
+  align-items: center;
+  width: 145px;
+  justify-content: center;
 }

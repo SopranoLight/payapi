@@ -1,40 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="navigation-left">
-                <a href="#"><img src="./icons/header-icons-logo.svg" alt=""><img src="./icons/header-logo-payapi.svg" alt=""></a>
-                <ul>
-                  <li><a href="#">Pricing</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <button>Schedule a Demo</button>
-        </nav>
-        <section>
-            <div class="left-content">
-                <h1>Start building with our APIs for absolutely free.</h1>
-                <form action="">
-                    <input type="email" name="username" placeholder="Enter email address">
-                    <button>Schedule a Demo</button>
-                </form>
-                <span>Have any questions? <a href="#">Contact Us</a></span>
-            </div>
-            <div class="right-content">
-                <img src="./img/phone.png" alt="">
-            </div>
-        </section>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <div class="navigation__top-content">
+          <a class="navigation__top-logo" href="#"
+            ><img src="./icons/header-icons-logo.svg" alt="" /><img
+              src="./icons/header-logo-payapi.svg"
+              alt=""
+          /></a>
+          <ul class="navigation__top-list">
+            <li><a class="navigation__top-links" href="#">Pricing</a></li>
+            <li><a class="navigation__top-links" href="#">About</a></li>
+            <li><a class="navigation__top-links" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <button class="button">Schedule a Demo</button>
+      </nav>
+      <section class="left_gift">
+        <div class="left-content">
+          <h1>Start building with our APIs for absolutely free.</h1>
+          <form class="form" action="">
+            <input
+              class="form__email"
+              type="email"
+              name="username"
+              placeholder="Enter email address"
+            />
+            <button class="button">Schedule a Demo</button>
+          </form>
+          <span class="questions">Have any questions? <a href="#">Contact Us</a></span>
+        </div>
+        <div class="right-content">
+          <img src="./img/phone.png" alt="" />
+        </div>
+      </section>
+      <div class="cicle__header"></div>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <section class="work-company">
+          <div class="work-company__info">
+            <h2 class="title work-company__info-title">Who we work with</h2>
+            <p class="paragraf work-company__paragraf">
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.
+            </p>
+            <a class="work-company__button" href="#">About Us</a>
+          </div>
+          <div class="company">
+           <div class="company__variation">
+              <a href="" class="company__lists"><img class="company_icon" src="./icons/tesla-icon.svg" alt=""></a>
+              <a href="" class="company__lists"><img class="company_icon" src="./icons/microsoft-icons.svg" alt=""></a>
+              <a href="" class="company__lists"><img class="company_icon" src="./icons/welett-icon.svg" alt=""></a>
+           </div>
+           <div class="company__variation">
+              <a href="" class="company__lists"><img class="company_icon" src="./icons/oracle-icon.svg" alt=""></a>
+              <a href="" class="company__lists"><img class="company_icon" src="./icons/google-icon.svg" alt=""></a>
+              <a href="" class="company__lists"><img class="company_icon" src="./icons/invidia-icon.svg" alt=""></a>
+           </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>
