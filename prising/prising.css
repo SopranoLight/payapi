@@ -1,0 +1,92 @@
+
+
+.header .navigation__pricing {
+  margin-bottom: 82px;
+  
+}
+.body__pricing .header__pricing {
+  height: 882px;
+  background: #edf3f8;
+}
+.pricing {
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.header .title_pricing {
+  margin-bottom: 72px;
+  margin-left: 165px;
+   display: flex;
+   justify-content: start;
+   width: 1110px;
+  font-size: 56px;
+  letter-spacing: -0.430769px;
+
+}
+.plan {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 350px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  color: #36536b;
+  font-weight: 400;
+  height: 582px;
+}
+.plan__choise {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #ba4270;
+  margin-bottom: 16px;
+}
+.plan .plan__paragraf {
+  margin-bottom: 8px;
+}
+.plan__price {
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #36536b;
+  margin-bottom: 24px;
+}
+
+.plan__container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: rgba(54, 83, 107, 0.25) solid 1px;
+  border-bottom: rgba(54, 83, 107, 0.25) solid 1px;
+  width: 350px;
+  padding: 24px 0;
+  margin-bottom: 24px;
+}
+.plan__select {
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.plan__btn {
+  padding: 15px 28px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #36536b;
+  border: 1px solid #36536b;
+  border-radius: 24px;
+}
+.cicle-pricing {
+  background-image: url(../icons/cicle-pricing.svg);
+
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 608px;
+    width: 640px;
+    z-index: -1;
+}
